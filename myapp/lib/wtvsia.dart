@@ -30,6 +30,10 @@ class _WordScreenState extends State<WordScreen> {
     'Babi',
     'Cibai',
     'Dumb Bitch',
+    'White Trash',
+    'Fucking Idiot',
+    'Lembab',
+    'Bodoh',
   ];
 
   int currentIndex = 0;
@@ -44,7 +48,7 @@ class _WordScreenState extends State<WordScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Daily Dose of Words of Wisdom in Alphabetical Order'),
+        title: const Text('Daily Dose of Words of Wisdom'),
         backgroundColor: Colors.tealAccent,
         centerTitle: true,
       ),
@@ -62,7 +66,7 @@ class _WordScreenState extends State<WordScreen> {
             const SizedBox(height: 30),
             ElevatedButton(
               onPressed: changeWord,
-              child: const Text('New Word'),
+              child: const Text('Next Up'),
             ),
           ],
         ),
